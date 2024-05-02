@@ -25,6 +25,7 @@ const Output = ({ editorRef, language }) => {
       <Text mb={2} fontSize="lg">
         Output
       </Text>
+      <Box style={{ display:"flex", alignItems:"center", gap:"5px"  }}>
       <Button
         variant="outline"
         colorScheme="green"
@@ -34,6 +35,9 @@ const Output = ({ editorRef, language }) => {
       >
         Run Code
       </Button>
+      <img src="/monaco.jpeg" alt="monaco" width={100} height={100}/>
+      คิดดีๆ ก่อนกดปุ่ม Run Code นะครับ ไม่งั้นจะเสียเวลาเปล่าๆ
+      </Box>
       <Box
         height="75vh"
         p={2}
