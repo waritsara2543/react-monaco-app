@@ -3,6 +3,7 @@ import { Box,HStack } from "@chakra-ui/react";
 import Editor, {loader} from "@monaco-editor/react";
 import LangSwitch from "./LangSwitch";
 import Output from "./Output";
+import Test from "./Test";
 import { CODE_TEMPLATES } from "../constants/template";
 
 loader.config({
@@ -40,6 +41,7 @@ const [code, setCode] = useState(CODE_TEMPLATES.javascript);
         <HStack spacing={4}>
             <Box w="50%">
                 <LangSwitch language={language} onSelect={handleLanguageChange} />
+                <Test setCode={setCode}/>
                 <Editor
                 height="90vh"
                 defaultLanguage={DEFAULT_LANGUAGE}
